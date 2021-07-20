@@ -5,9 +5,7 @@
 //  Created by Vinicius Mesquita on 19/07/21.
 //
 
-#import <Foundation/Foundation.h>
-#import <Soundfy/SoundfyPlayer.h>
-#import <AVFoundation/AVFoundation.h>
+#import "SoundfyPlayer.h"
 
 @implementation SoundfyPlayer
 
