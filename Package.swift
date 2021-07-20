@@ -24,8 +24,8 @@ let package = Package(
         .target(
             name: "Soundfy",
             path: "Soundfy",
-            publicHeadersPath: "",
-            dependencies: []),
+            publicHeadersPath: ""
+        ),
         .testTarget(
             name: "SoundfyTests",
             dependencies: ["Soundfy"]),
