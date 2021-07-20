@@ -10,6 +10,8 @@
 		5056592F26A5BCB800715D73 /* Soundfy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5056592526A5BCB700715D73 /* Soundfy.framework */; };
 		5056593426A5BCB800715D73 /* SoundfyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5056593326A5BCB800715D73 /* SoundfyTests.m */; };
 		5056593626A5BCB800715D73 /* Soundfy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5056592826A5BCB700715D73 /* Soundfy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		812CB4FA26A5F652009B501C /* SoundfyPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 812CB4F726A5EE1C009B501C /* SoundfyPlayer.m */; };
+		812CB54726A5FA10009B501C /* SoundfyPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 812CB54626A5F9DD009B501C /* SoundfyPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		5056592E26A5BCB800715D73 /* SoundfyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundfyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5056593326A5BCB800715D73 /* SoundfyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundfyTests.m; sourceTree = "<group>"; };
 		5056593526A5BCB800715D73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		812CB4F726A5EE1C009B501C /* SoundfyPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundfyPlayer.m; sourceTree = "<group>"; };
+		812CB54626A5F9DD009B501C /* SoundfyPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundfyPlayer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				5056592826A5BCB700715D73 /* Soundfy.h */,
 				5056592926A5BCB700715D73 /* Info.plist */,
+				812CB4F726A5EE1C009B501C /* SoundfyPlayer.m */,
+				812CB54626A5F9DD009B501C /* SoundfyPlayer.h */,
 			);
 			path = Soundfy;
 			sourceTree = "<group>";
@@ -93,6 +99,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812CB54726A5FA10009B501C /* SoundfyPlayer.h in Headers */,
 				5056593626A5BCB800715D73 /* Soundfy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812CB4FA26A5F652009B501C /* SoundfyPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
