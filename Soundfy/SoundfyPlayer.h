@@ -11,6 +11,9 @@
     double volume;
     NSString *soundName;
 }
-@property(nonatomic, readwrite) double _volume;
 - (void)playSound:(NSString *)soundName;
+-(void)setVolume:(double)volume;
+-(void)pause;
+-(void)stop;
+-(void)play;
 @end
