@@ -28,6 +28,8 @@ let package = Package(
         ),
         .testTarget(
             name: "SoundfyTests",
-            dependencies: ["Soundfy"]),
+            dependencies: ["Soundfy"],
+            path: "SoundfyTests"
+        )
     ]
 )
