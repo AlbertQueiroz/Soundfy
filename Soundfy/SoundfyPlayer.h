@@ -8,12 +8,18 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface SoundfyPlayer: NSObject <AVAudioPlayerDelegate> {
-    double volume;
     NSString *soundName;
 }
+
 - (void)playSound:(NSString *)soundName;
--(void)setVolume:(double)volume;
--(void)pause;
--(void)stop;
--(void)play;
+- (void)playSound:(NSString *)soundName volume: (double)volume;
+- (void)playSound:(NSString *)soundName loops: (int)numberOfLoops;
+- (void)playSound:(NSString *)soundName volume: (double)volume loops:(int)numberOfLoops;
+
+- (void)setVolume:(double)volume;
+- (double)getVolume;
+
+- (void)pause;
+- (void)stop;
+- (void)play;
 @end

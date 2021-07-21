@@ -11,16 +11,26 @@
 
 AVAudioPlayer *player;
 
--(id)init {
+- (id)init {
     self = [super init];
-    volume = 1.0;
-    NSLog(@"Hello, the volume is %f", volume);
     return self;
 }
 
 /// Play a sound from a file
 /// @param soundName sound file name without type
--(void)playSound:(NSString *)soundName {
+- (void)playSound:(NSString *)soundName {
+    [self playSound:soundName volume:1.0 loops:1];
+}
+
+- (void)playSound:(NSString *)soundName loops: (int)numberOfLoops {
+    [self playSound:soundName volume:1.0 loops:numberOfLoops];
+}
+
+- (void)playSound:(NSString *)soundName volume: (double)volume {
+    [self playSound:soundName volume:volume loops:1.0];
+}
+
+- (void)playSound:(NSString *)soundName volume: (double)volume loops:(int)numberOfLoops {
     // Search for path of sound
     NSString *path = [[NSBundle mainBundle] pathForResource:soundName ofType:@"mp3"];
     // Create url with the path
@@ -29,27 +39,33 @@ AVAudioPlayer *player;
     NSError *error;
     // Instatiate player with url and error.
     player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
-    player.numberOfLoops = 1;
     player.volume = volume;
+    player.numberOfLoops = numberOfLoops;
     player.delegate = self;
     [player play];
 }
 
+
 /// Set current player volume
 /// @param volume new volume value
--(void)setVolume:(double)volume {
+- (void)setVolume:(double)volume {
     player.volume = volume;
 }
 
--(void)pause {
+/// Get current player volume
+- (double)getVolume {
+    return player.volume;
+}
+
+- (void)pause {
     [player pause];
 }
 
--(void)stop {
+- (void)stop {
     [player stop];
 }
 
--(void)play {
+- (void)play {
     [player play];
 }
 
