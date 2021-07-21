@@ -14,6 +14,9 @@
     bool isSoundEffectMuted;
 }
 
+@property (nonatomic) bool isBackgroundMuted;
+@property (nonatomic) bool isSoundEffectMuted;
+
 + (SoundManager*)shared;
 - (void)setMutedSoundEffects:(bool)isMuted;
 - (void)setMutedBackground:(bool)isMuted;

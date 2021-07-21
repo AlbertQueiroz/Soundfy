@@ -10,6 +10,9 @@
 
 @implementation SoundManager
 
+@synthesize isBackgroundMuted;
+@synthesize isSoundEffectMuted;
+
 + (SoundManager*)shared {
     static SoundManager *sharedInstance = nil;
     static dispatch_once_t onceToken;
@@ -20,13 +23,15 @@
 }
 
 - (void)setMutedSoundEffects:(bool)isMuted {
-    NSDictionary* dict = [NSDictionary dictionaryWithObject:@YES forKey:@"isMuted"];
+    isSoundEffectMuted = isMuted;
+    NSDictionary* dict = [NSDictionary dictionaryWithObject:@(isSoundEffectMuted) forKey:@"isMuted"];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"SoundfyMute"
                                                         object:self
                                                       userInfo:dict];
 }
 
 - (void)setMutedBackground:(bool)isMuted {
+    isBackgroundMuted = isMuted;
 //    [[BackgroundPlayer shared] setMuted:YES];
 }
 
