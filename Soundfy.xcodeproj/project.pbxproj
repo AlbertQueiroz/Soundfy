@@ -89,9 +89,9 @@
 				812CB4F726A5EE1C009B501C /* SoundfyPlayer.m */,
 				505659A326A7182300715D73 /* BackgroundPlayer.h */,
 				505659A526A7183100715D73 /* BackgroundPlayer.m */,
-				5056592926A5BCB700715D73 /* Info.plist */,
 				812E74F326A84A640032039D /* SoundManager.h */,
 				812E74F426A84A730032039D /* SoundManager.m */,
+				5056592926A5BCB700715D73 /* Info.plist */,
 			);
 			path = Soundfy;
 			sourceTree = "<group>";

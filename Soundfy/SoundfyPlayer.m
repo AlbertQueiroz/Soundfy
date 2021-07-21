@@ -13,6 +13,10 @@ AVAudioPlayer *player;
 
 - (id)init {
     self = [super init];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(setMuted:)
+                                                 name:@"SoundfyMute"
+                                               object:[SoundManager shared]];
     return self;
 }
 
@@ -69,6 +73,14 @@ AVAudioPlayer *player;
     [player play];
 }
 
+- (void)setMuted:(NSNotification*)notification {
+    NSDictionary* dict = notification.userInfo;
+    if (dict[@"isMuted"]) {
+        [player stop];
+    } else {
+        [player play];
+    }
+}
 
 // MARK: AVAudioPlayerDelegate
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {

@@ -6,8 +6,11 @@
 //
 #import "SoundfyPlayer.h"
 
+@class SoundfyPlayer;
 @interface BackgroundPlayer: SoundfyPlayer {
     
 }
+
++ (id)shared;
 
 @end

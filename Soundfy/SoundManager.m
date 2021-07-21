@@ -6,6 +6,7 @@
 //
 
 #import "SoundManager.h"
+#import "BackgroundPlayer.h"
 
 @implementation SoundManager
 
@@ -17,4 +18,16 @@
     });
     return sharedInstance;
 }
+
+- (void)setMutedSoundEffects:(bool)isMuted {
+    NSDictionary* dict = [NSDictionary dictionaryWithObject:@YES forKey:@"isMuted"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"SoundfyMute"
+                                                        object:self
+                                                      userInfo:dict];
+}
+
+- (void)setMutedBackground:(bool)isMuted {
+    [[BackgroundPlayer shared] setMuted:YES];
+}
+
 @end

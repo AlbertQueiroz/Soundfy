@@ -15,4 +15,6 @@
 }
 
 + (id)shared;
+- (void)setMutedSoundEffects:(bool)isMuted;
+- (void)setMutedBackground:(bool)isMuted;
 @end
