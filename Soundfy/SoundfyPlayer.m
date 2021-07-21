@@ -13,7 +13,7 @@ AVAudioPlayer *player;
 
 -(id)init {
     self = [super init];
-    self.volume = 1.0;
+    volume = 1.0;
     NSLog(@"Hello, the volume is %f", volume);
     return self;
 }
