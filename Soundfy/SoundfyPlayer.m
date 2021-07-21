@@ -23,7 +23,7 @@ AVAudioPlayer *player;
 /// Play a sound from a file
 /// @param soundName sound file name without type
 - (void)playSound:(NSString *)soundName {
-    [self playSound:soundName volume:1.0 loops:1];
+    [self playSound:soundName volume:1.0 loops:0];
 }
 
 - (void)playSound:(NSString *)soundName loops: (int)numberOfLoops {
@@ -31,7 +31,7 @@ AVAudioPlayer *player;
 }
 
 - (void)playSound:(NSString *)soundName volume: (double)volume {
-    [self playSound:soundName volume:volume loops:1.0];
+    [self playSound:soundName volume:volume loops:0];
 }
 
 - (void)playSound:(NSString *)soundName volume: (double)volume loops:(int)numberOfLoops {
