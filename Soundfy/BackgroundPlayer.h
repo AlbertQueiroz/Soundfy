@@ -11,6 +11,6 @@
     
 }
 
-+ (id)shared;
++ (SoundfyPlayer*)shared;
 
 @end

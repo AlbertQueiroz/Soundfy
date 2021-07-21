@@ -10,7 +10,7 @@
 
 @implementation SoundManager
 
-+ (id)shared {
++ (SoundManager*)shared {
     static SoundManager *sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -27,7 +27,7 @@
 }
 
 - (void)setMutedBackground:(bool)isMuted {
-    [[BackgroundPlayer shared] setMuted:YES];
+//    [[BackgroundPlayer shared] setMuted:YES];
 }
 
 @end

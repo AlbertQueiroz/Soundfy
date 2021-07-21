@@ -9,7 +9,7 @@
 
 @implementation BackgroundPlayer
 
-+ (id)shared {
++ (SoundfyPlayer*)shared {
     static BackgroundPlayer *sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

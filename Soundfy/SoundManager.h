@@ -14,7 +14,7 @@
     bool isSoundEffectMuted;
 }
 
-+ (id)shared;
++ (SoundManager*)shared;
 - (void)setMutedSoundEffects:(bool)isMuted;
 - (void)setMutedBackground:(bool)isMuted;
 @end
