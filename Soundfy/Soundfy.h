@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import "SoundfyPlayer.h"
+#import "BackgroundPlayer.h"
+#import "SoundManager.h"
 
 //! Project version number for Soundfy.
 FOUNDATION_EXPORT double SoundfyVersionNumber;
