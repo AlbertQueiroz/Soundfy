@@ -5,12 +5,12 @@
 //  Created by Albert on 20/07/21.
 //
 #import "SoundfyPlayer.h"
+#import "SoundfyPlayer+PrivateMethods.h"
 
-@class SoundfyPlayer;
 @interface BackgroundPlayer: SoundfyPlayer {
     
 }
 
-+ (SoundfyPlayer*)shared;
++ (BackgroundPlayer*)shared;
 
 @end
