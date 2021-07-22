@@ -9,7 +9,6 @@
 @interface BackgroundPlayer: SoundfyPlayer {
     
 }
-
 + (BackgroundPlayer*)shared;
 
 @end

@@ -21,4 +21,11 @@
     return sharedInstance;
 }
 
+- (void)playSound:(NSString *)soundName volume:(double)volume loops:(int)numberOfLoops {
+    if ([SoundManager shared].isBackgroundMuted) {
+        return;
+    }
+    [super play:soundName volume:volume loops:numberOfLoops];
+}
+
 @end

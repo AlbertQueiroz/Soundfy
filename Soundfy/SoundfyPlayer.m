@@ -38,6 +38,10 @@ AVAudioPlayer *player;
     if ([SoundManager shared].isSoundEffectMuted) {
         return;
     }
+    [self play:soundName volume:volume loops:numberOfLoops];
+}
+
+- (void)play:(NSString *)soundName volume: (double)volume loops:(int)numberOfLoops {
     // Search for path of sound
     NSString *path = [[NSBundle mainBundle] pathForResource:soundName ofType:@"mp3"];
     // Create url with the path
