@@ -53,6 +53,7 @@ AVAudioPlayer *player;
     player.volume = volume;
     player.numberOfLoops = numberOfLoops;
     player.delegate = self;
+    [player prepareToPlay];
     [player play];
 }
 
