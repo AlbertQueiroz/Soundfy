@@ -39,4 +39,10 @@
     [super.player play];
 }
 
+// MARK: AVAudioPlayerDelegate
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
+    NSLog(@"%d", flag);
+}
+
+
 @end

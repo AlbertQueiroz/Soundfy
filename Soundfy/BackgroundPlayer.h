@@ -6,7 +6,7 @@
 //
 #import "SoundfyPlayer.h"
 @class SoundfyPlayer;
-@interface BackgroundPlayer: SoundfyPlayer {
+@interface BackgroundPlayer: SoundfyPlayer <AVAudioPlayerDelegate> {
     
 }
 
