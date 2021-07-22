@@ -10,8 +10,8 @@
 
 @interface SoundManager: NSObject {
     int globalVolume;
-    bool isBackgroundMuted;
-    bool isSoundEffectMuted;
+    BOOL isBackgroundMuted;
+    BOOL isSoundEffectMuted;
 }
 
 @property (nonatomic) bool isBackgroundMuted;

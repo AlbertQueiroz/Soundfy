@@ -78,7 +78,7 @@ AVAudioPlayer *player;
 
 - (void)setMuted:(NSNotification*)notification {
     NSDictionary* dict = notification.userInfo;
-    if (dict[@"isMuted"]) {
+    if (dict[@"isSoundEffectsMuted"]) {
         [player stop];
     } else {
         [player play];

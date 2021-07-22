@@ -13,6 +13,9 @@
 @synthesize isBackgroundMuted;
 @synthesize isSoundEffectMuted;
 
+NSString *isSoundEffectMutedKey = @"isSoundEffectsMuted";
+NSString *isBackgroundMutedKey = @"isSoundBackgroundMuted";
+
 + (SoundManager*)shared {
     static SoundManager *sharedInstance = nil;
     static dispatch_once_t onceToken;
@@ -22,9 +25,17 @@
     return sharedInstance;
 }
 
+- (id)init {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    isSoundEffectMuted = [defaults boolForKey:isSoundEffectMutedKey];
+    isBackgroundMuted = [defaults boolForKey:isBackgroundMutedKey];
+    return self;
+}
+
 - (void)setMutedSoundEffects:(bool)isMuted {
     isSoundEffectMuted = isMuted;
-    NSDictionary* dict = [NSDictionary dictionaryWithObject:@(isSoundEffectMuted) forKey:@"isMuted"];
+    [[NSUserDefaults standardUserDefaults] setObject: @(isSoundEffectMuted) forKey:isSoundEffectMutedKey];
+    NSDictionary* dict = [NSDictionary dictionaryWithObject:@(isSoundEffectMuted) forKey:isSoundEffectMutedKey];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"SoundfyMute"
                                                         object:self
                                                       userInfo:dict];
@@ -32,7 +43,8 @@
 
 - (void)setMutedBackground:(bool)isMuted {
     isBackgroundMuted = isMuted;
-//    [[BackgroundPlayer shared] setMuted:YES];
+    [[NSUserDefaults standardUserDefaults] setObject: @(isBackgroundMuted) forKey:isBackgroundMutedKey];
+    [[BackgroundPlayer shared] stop];
 }
 
 @end
