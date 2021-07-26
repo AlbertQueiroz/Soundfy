@@ -31,6 +31,7 @@ NSMutableArray *players;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     isSoundEffectMuted = [defaults boolForKey:isSoundEffectMutedKey];
     isBackgroundMuted = [defaults boolForKey:isBackgroundMutedKey];
+    players = [[NSMutableArray alloc] init];
     return self;
 }
 

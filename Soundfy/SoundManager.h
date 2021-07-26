@@ -16,7 +16,7 @@
 
 @property (nonatomic) bool isBackgroundMuted;
 @property (nonatomic) bool isSoundEffectMuted;
-@property (nonatomic) NSMutableArray *players;
+@property (nonatomic, strong) NSMutableArray *players;
 
 + (SoundManager*)shared;
 - (void)setMutedSoundEffects:(bool)isMuted;
