@@ -16,6 +16,8 @@
 NSString *isSoundEffectMutedKey = @"isSoundEffectsMuted";
 NSString *isBackgroundMutedKey = @"isSoundBackgroundMuted";
 
+NSMutableArray *players;
+
 + (SoundManager*)shared {
     static SoundManager *sharedInstance = nil;
     static dispatch_once_t onceToken;
@@ -45,6 +47,29 @@ NSString *isBackgroundMutedKey = @"isSoundBackgroundMuted";
     isBackgroundMuted = isMuted;
     [[NSUserDefaults standardUserDefaults] setObject: @(isBackgroundMuted) forKey:isBackgroundMutedKey];
     [[BackgroundPlayer shared] stop];
+}
+
+/// Set global volume
+/// @param volume new volume value
+- (void)setVolume:(double)volume {
+    globalVolume = volume;
+}
+
+/// Get global volume
+- (double)getVolume {
+    return globalVolume;
+}
+
+- (void)stopAll {
+    for (int i = 0; i < players.count; i++) {
+        [players[i] stop];
+    }
+}
+
+- (void)pauseAll {
+    for (int i = 0; i < players.count; i++) {
+        [players[i] pause];
+    }
 }
 
 @end

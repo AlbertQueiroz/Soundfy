@@ -53,6 +53,8 @@ AVAudioPlayer *player;
     player.volume = volume;
     player.numberOfLoops = numberOfLoops;
     player.delegate = self;
+    index = SoundManager.shared.players.count + 1;
+    [SoundManager.shared.players addObject:player];
     [player play];
 }
 
@@ -91,6 +93,7 @@ AVAudioPlayer *player;
 
 // MARK: AVAudioPlayerDelegate
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
+    [SoundManager.shared.players removeObjectAtIndex:index];
     NSLog(@"%d", flag);
 }
 

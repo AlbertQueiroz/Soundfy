@@ -10,6 +10,7 @@
 
 @interface SoundfyPlayer: NSObject <AVAudioPlayerDelegate> {
     NSString *soundName;
+    long index;
 }
 
 - (void)playSound:(NSString *)soundName;
