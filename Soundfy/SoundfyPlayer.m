@@ -9,8 +9,6 @@
 
 @implementation SoundfyPlayer
 
-AVAudioPlayer *player;
-
 - (id)init {
     self = [super init];
     [[NSNotificationCenter defaultCenter] addObserver:self

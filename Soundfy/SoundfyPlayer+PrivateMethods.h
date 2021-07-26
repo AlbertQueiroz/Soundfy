@@ -7,5 +7,6 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface SoundfyPlayer()
+@property (nonatomic, strong) AVAudioPlayer *player;
 - (void)play:(NSString *)soundName volume: (double)volume loops:(int)numberOfLoops;
 @end
