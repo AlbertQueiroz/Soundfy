@@ -49,7 +49,12 @@ AVAudioPlayer *player;
     // Create error variable
     NSError *error;
     // Instatiate player with url and error.
-    player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+     @try {
+         player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+    }
+    @catch(NSException *ne) {
+        NSLog(@"%@", ne.reason);
+    }
     player.volume = volume;
     player.numberOfLoops = numberOfLoops;
     player.delegate = self;
