@@ -55,6 +55,7 @@ AVAudioPlayer *player;
     player.delegate = self;
     index = SoundManager.shared.players.count + 1;
     [SoundManager.shared.players addObject:player];
+    [player prepareToPlay];
     [player play];
 }
 
