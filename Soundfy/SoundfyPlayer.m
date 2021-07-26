@@ -6,8 +6,11 @@
 //
 
 #import "SoundfyPlayer.h"
+#import "SoundfyPlayer+PrivateMethods.h"
 
 @implementation SoundfyPlayer
+
+@synthesize player;
 
 - (id)init {
     self = [super init];
