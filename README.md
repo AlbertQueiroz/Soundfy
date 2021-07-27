@@ -10,24 +10,24 @@
 ## Overview
 Soundfy is a lib that helps you to manage the sound in your project, with simple abstractions and clean calls, you can create awesome applications with a great sound experience.
 
-#### Important classes
-`SoundfyPlayer`: Can have multiple instances to play different sounds.
-`BackgroundPlayer`: Singlenton used for playing a single background sound and create effects all over the project.
+### Important classes
+`SoundfyPlayer`: Can have multiple instances to play different sounds.\
+`BackgroundPlayer`: Singlenton used for playing a single background sound and create effects all over the project.\
 `SoundManager`: Singleton to manage general project sounds, just like mute all sounds or backgrounds sounds.
 
-#### Examples
-##### Creating instances
+### Examples
+#### Creating instances
 Creating an instance has more benefits like the ability to adjust the volume and playback callbacks.
 ```swift
 let player = SoundfyPlayer()
 let backgroundPlayer = BackgroundPlayer.shared()
 let manager = SoundManager.shared()
 ```
-##### Simple Sounds
+#### Simple Sounds
 ```swift
 player.playSound("GameOver")
 ```
-##### Background Music
+#### Background Music
 ```swift
 backgroundPlayer?.playSound("MenuBackground")
 ```
@@ -45,14 +45,14 @@ Specify a negative number of loops to play the sound continously in an infinite 
 player.playSound("GameOver", volume: 0.2, loops: -1)
 ```
 
-##### Muting All Sounds Sounds
+#### Muting All Sounds Sounds
 ```swift
 manager?.setMutedSoundEffects(true)
 manager?.setMutedBackground(true)
 ```
 The value of `isMuted` property will be automatically persisted in `UserDefaults` and restored on the next launch of your app.
 
-##### Change the volume
+#### Change the volume
 
 You can change the volume of each *SoundfyPlayer* instance.
 
@@ -61,7 +61,7 @@ player.setVolume(0.5)
 ```
 The value of *volume* property should be between 0.0 and 1.0, where 1.0 is the maximum.
 
-##### Callbacks
+#### Callbacks
 
 You can pass a callback to the `play` method. It will be played after the sound finished playing. For looped sounds, the callback will be called once after the last loop has been played.
 
