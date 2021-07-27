@@ -61,17 +61,6 @@ player.setVolume(0.5)
 ```
 The value of *volume* property should be between 0.0 and 1.0, where 1.0 is the maximum.
 
-#### Callbacks
-
-You can pass a callback to the `play` method. It will be played after the sound finished playing. For looped sounds, the callback will be called once after the last loop has been played.
-
-```swift
-mySound.play { completed in
-    print("completed: \(completed)")
-}
-```
-The callback is not called if the sound was stopped, interrupted or in case of a playback error.
-
 ## Features
 - [x] Playing single sounds
 - [x] Loops
@@ -80,7 +69,6 @@ The callback is not called if the sound was stopped, interrupted or in case of a
 - [x] Stopping all sounds with a global static method
 - [x] Ability to pause and resume
 - [x] Adjusting sound volume
-- [x] Callbacks
 
 ## Requirements
 - Swift/Objc
@@ -107,7 +95,7 @@ To install with carthage, follow the instruction on [Carthage](https://github.co
 
 #### Cartfile
 ```
-github "adamcichy/SwiftySound"
+github "AlbertQueiroz/Soundfy"
 ```
 
 ### Installation with Swift Package Manager
