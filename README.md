@@ -98,7 +98,7 @@ The callback is not called if the sound was stopped, interrupted or in case of a
 ```ruby
 platform :ios, '8.0'
 use_frameworks!
-pod 'SwiftySound'
+pod 'Soundfy'
 ```
 ### Installation with Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a lightweight dependency manager for Swift and Objective-C. It leverages CocoaTouch modules and is less invasive than CocoaPods.
