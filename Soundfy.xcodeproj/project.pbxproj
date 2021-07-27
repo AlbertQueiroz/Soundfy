@@ -10,6 +10,11 @@
 		5056592F26A5BCB800715D73 /* Soundfy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5056592526A5BCB700715D73 /* Soundfy.framework */; };
 		5056593426A5BCB800715D73 /* SoundfyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5056593326A5BCB800715D73 /* SoundfyTests.m */; };
 		5056593626A5BCB800715D73 /* Soundfy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5056592826A5BCB700715D73 /* Soundfy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		505659A426A7182300715D73 /* BackgroundPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 505659A326A7182300715D73 /* BackgroundPlayer.h */; };
+		505659A626A7183100715D73 /* BackgroundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 505659A526A7183100715D73 /* BackgroundPlayer.m */; };
+		812CB4FA26A5F652009B501C /* SoundfyPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 812CB4F726A5EE1C009B501C /* SoundfyPlayer.m */; };
+		812CB54726A5FA10009B501C /* SoundfyPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 812CB54626A5F9DD009B501C /* SoundfyPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		812E74F526A84A730032039D /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 812E74F426A84A730032039D /* SoundManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,14 @@
 		5056592E26A5BCB800715D73 /* SoundfyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundfyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5056593326A5BCB800715D73 /* SoundfyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundfyTests.m; sourceTree = "<group>"; };
 		5056593526A5BCB800715D73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5056599E26A70E2E00715D73 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		505659A326A7182300715D73 /* BackgroundPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundPlayer.h; sourceTree = "<group>"; };
+		505659A526A7183100715D73 /* BackgroundPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundPlayer.m; sourceTree = "<group>"; };
+		812CB4F726A5EE1C009B501C /* SoundfyPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundfyPlayer.m; sourceTree = "<group>"; };
+		812CB54626A5F9DD009B501C /* SoundfyPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundfyPlayer.h; sourceTree = "<group>"; };
+		812E74F326A84A640032039D /* SoundManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
+		812E74F426A84A730032039D /* SoundManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
+		81F73B2B26A9AE3600FC36BF /* SoundfyPlayer+PrivateMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoundfyPlayer+PrivateMethods.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +66,7 @@
 		5056591B26A5BCB700715D73 = {
 			isa = PBXGroup;
 			children = (
+				5056599E26A70E2E00715D73 /* Package.swift */,
 				5056592726A5BCB700715D73 /* Soundfy */,
 				5056593226A5BCB800715D73 /* SoundfyTests */,
 				5056592626A5BCB700715D73 /* Products */,
@@ -72,7 +86,14 @@
 			isa = PBXGroup;
 			children = (
 				5056592826A5BCB700715D73 /* Soundfy.h */,
+				812CB54626A5F9DD009B501C /* SoundfyPlayer.h */,
+				812CB4F726A5EE1C009B501C /* SoundfyPlayer.m */,
+				505659A326A7182300715D73 /* BackgroundPlayer.h */,
+				505659A526A7183100715D73 /* BackgroundPlayer.m */,
+				812E74F326A84A640032039D /* SoundManager.h */,
+				812E74F426A84A730032039D /* SoundManager.m */,
 				5056592926A5BCB700715D73 /* Info.plist */,
+				81F73B2B26A9AE3600FC36BF /* SoundfyPlayer+PrivateMethods.h */,
 			);
 			path = Soundfy;
 			sourceTree = "<group>";
@@ -93,6 +114,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505659A426A7182300715D73 /* BackgroundPlayer.h in Headers */,
+				812CB54726A5FA10009B501C /* SoundfyPlayer.h in Headers */,
 				5056593626A5BCB800715D73 /* Soundfy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +169,7 @@
 				TargetAttributes = {
 					5056592426A5BCB700715D73 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					5056592D26A5BCB800715D73 = {
 						CreatedOnToolsVersion = 12.5;
@@ -193,6 +217,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812E74F526A84A730032039D /* SoundManager.m in Sources */,
+				505659A626A7183100715D73 /* BackgroundPlayer.m in Sources */,
+				812CB4FA26A5F652009B501C /* SoundfyPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +363,7 @@
 		5056593A26A5BCB800715D73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -351,6 +379,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = academy.Soundfy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -358,6 +388,7 @@
 		5056593B26A5BCB800715D73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -373,6 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = academy.Soundfy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
