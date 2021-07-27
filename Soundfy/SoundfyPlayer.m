@@ -59,8 +59,8 @@
     player.volume = volume;
     player.numberOfLoops = numberOfLoops;
     player.delegate = self;
-    index = SoundManager.shared.players.count + 1;
-    [SoundManager.shared.players addObject:player];
+//    index = SoundManager.shared.players.count + 1;
+//    [SoundManager.shared.players addObject:player];
     [player prepareToPlay];
     [player play];
 }
@@ -99,9 +99,9 @@
 }
 
 // MARK: AVAudioPlayerDelegate
-- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
-    [SoundManager.shared.players removeObjectAtIndex:index];
-    NSLog(@"%d", flag);
-}
+//- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
+//    [SoundManager.shared.players removeObjectAtIndex:index];
+//    NSLog(@"%d", flag);
+//}
 
 @end
