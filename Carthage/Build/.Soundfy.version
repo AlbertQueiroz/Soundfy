@@ -1,0 +1,26 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "922770a0cd576024e8aae727db198245b14794d4",
+  "iOS" : [
+    {
+      "hash" : "1827a4f86d969bdc947907e9aa29aa785db21fc2c24a80dedabb7e17f28e4fbe",
+      "name" : "Soundfy",
+      "container" : "Soundfy.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    },
+    {
+      "hash" : "ebe6ed8d2d363c9aeb35ad286812f3f11bbbacc2f0ac886494e54b0470c5d18c",
+      "name" : "Soundfy",
+      "container" : "Soundfy.xcframework",
+      "identifier" : "ios-arm64"
+    }
+  ]
+}

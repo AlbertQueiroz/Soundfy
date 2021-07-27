@@ -1,0 +1,130 @@
+BCSymbolMap Version: 2.0
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk
+iPhoneOS14.5.sdk
+/Users/vinicius/Library/Developer/Xcode/DerivedData/Soundfy-ggqaxnvfyfgnychgqnntyskrgzlt/Build/Intermediates.noindex/ArchiveIntermediates/Soundfy/IntermediateBuildFilesPath/Soundfy.build/Release-iphoneos/Soundfy.build/DerivedSources/Soundfy_vers.c
+/Users/vinicius/Desktop/Soundfy/Soundfy
++[SoundManager shared]
+___22+[SoundManager shared]_block_invoke
+-[SoundManager init]
+-[SoundManager setMutedSoundEffects:]
+-[SoundManager setMutedBackground:]
+-[SoundManager setVolume:]
+-[SoundManager getVolume]
+-[SoundManager stopAll]
+-[SoundManager pauseAll]
+-[SoundManager isBackgroundMuted]
+-[SoundManager setIsBackgroundMuted:]
+-[SoundManager isSoundEffectMuted]
+-[SoundManager setIsSoundEffectMuted:]
+-[SoundManager players]
+-[SoundManager setPlayers:]
+-[SoundManager .cxx_destruct]
+_shared.sharedInstance
+_shared.onceToken
+___block_descriptor_32_e5_v8?0l
+___block_literal_global
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_CLASSLIST_REFERENCES_$_.4
+_OBJC_SELECTOR_REFERENCES_
+_OBJC_SELECTOR_REFERENCES_.6
+_OBJC_CLASSLIST_REFERENCES_$_.7
+_OBJC_CLASSLIST_REFERENCES_$_.8
+_OBJC_SELECTOR_REFERENCES_.10
+_OBJC_SELECTOR_REFERENCES_.12
+_OBJC_CLASSLIST_REFERENCES_$_.13
+_OBJC_SELECTOR_REFERENCES_.15
+_OBJC_CLASSLIST_REFERENCES_$_.16
+_OBJC_SELECTOR_REFERENCES_.18
+_OBJC_SELECTOR_REFERENCES_.22
+_OBJC_CLASSLIST_REFERENCES_$_.23
+_OBJC_SELECTOR_REFERENCES_.25
+_OBJC_SELECTOR_REFERENCES_.27
+_OBJC_SELECTOR_REFERENCES_.29
+_OBJC_SELECTOR_REFERENCES_.31
+_OBJC_SELECTOR_REFERENCES_.33
+__OBJC_$_CLASS_METHODS_SoundManager
+__OBJC_METACLASS_RO_$_SoundManager
+__OBJC_$_INSTANCE_METHODS_SoundManager
+_OBJC_IVAR_$_SoundManager._players
+__OBJC_$_INSTANCE_VARIABLES_SoundManager
+__OBJC_$_PROP_LIST_SoundManager
+__OBJC_CLASS_RO_$_SoundManager
+/Users/vinicius/Desktop/Soundfy/Soundfy/Soundfy/SoundManager.m
+Soundfy/SoundManager.m
+Soundfy/SoundManager.h
+__22+[SoundManager shared]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/usr/include/dispatch/once.h
++[BackgroundPlayer shared]
+___26+[BackgroundPlayer shared]_block_invoke
+-[BackgroundPlayer playSound:volume:loops:]
+_OBJC_CLASSLIST_REFERENCES_$_.1
+_OBJC_SELECTOR_REFERENCES_.3
+_OBJC_SELECTOR_REFERENCES_.5
+__OBJC_$_CLASS_METHODS_BackgroundPlayer
+__OBJC_METACLASS_RO_$_BackgroundPlayer
+__OBJC_$_INSTANCE_METHODS_BackgroundPlayer
+__OBJC_CLASS_RO_$_BackgroundPlayer
+/Users/vinicius/Desktop/Soundfy/Soundfy/Soundfy/BackgroundPlayer.m
+Soundfy/BackgroundPlayer.m
+__26+[BackgroundPlayer shared]_block_invoke
+-[SoundfyPlayer init]
+-[SoundfyPlayer playSound:]
+-[SoundfyPlayer playSound:loops:]
+-[SoundfyPlayer playSound:volume:]
+-[SoundfyPlayer playSound:volume:loops:]
+-[SoundfyPlayer play:volume:loops:]
+-[SoundfyPlayer setVolume:]
+-[SoundfyPlayer getVolume]
+-[SoundfyPlayer pause]
+-[SoundfyPlayer stop]
+-[SoundfyPlayer play]
+-[SoundfyPlayer setMuted:]
+-[SoundfyPlayer audioPlayerDidFinishPlaying:successfully:]
+-[SoundfyPlayer player]
+-[SoundfyPlayer setPlayer:]
+-[SoundfyPlayer .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_.2
+_OBJC_SELECTOR_REFERENCES_.4
+_OBJC_CLASSLIST_REFERENCES_$_.5
+_OBJC_SELECTOR_REFERENCES_.7
+_OBJC_SELECTOR_REFERENCES_.9
+_OBJC_SELECTOR_REFERENCES_.11
+_OBJC_SELECTOR_REFERENCES_.13
+_OBJC_CLASSLIST_REFERENCES_$_.26
+_OBJC_SELECTOR_REFERENCES_.28
+_OBJC_SELECTOR_REFERENCES_.32
+_OBJC_SELECTOR_REFERENCES_.34
+_OBJC_SELECTOR_REFERENCES_.36
+_OBJC_SELECTOR_REFERENCES_.38
+_OBJC_SELECTOR_REFERENCES_.40
+_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_SELECTOR_REFERENCES_.44
+_OBJC_SELECTOR_REFERENCES_.46
+_OBJC_SELECTOR_REFERENCES_.48
+_OBJC_SELECTOR_REFERENCES_.50
+_OBJC_SELECTOR_REFERENCES_.52
+_OBJC_SELECTOR_REFERENCES_.54
+_OBJC_SELECTOR_REFERENCES_.56
+_OBJC_SELECTOR_REFERENCES_.60
+_OBJC_SELECTOR_REFERENCES_.62
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+__OBJC_$_PROP_LIST_NSObject
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_$_PROTOCOL_REFS_AVAudioPlayerDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_AVAudioPlayerDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_AVAudioPlayerDelegate
+__OBJC_PROTOCOL_$_AVAudioPlayerDelegate
+__OBJC_LABEL_PROTOCOL_$_AVAudioPlayerDelegate
+__OBJC_CLASS_PROTOCOLS_$_SoundfyPlayer
+__OBJC_METACLASS_RO_$_SoundfyPlayer
+__OBJC_$_INSTANCE_METHODS_SoundfyPlayer
+_OBJC_IVAR_$_SoundfyPlayer.player
+__OBJC_$_INSTANCE_VARIABLES_SoundfyPlayer
+__OBJC_$_PROP_LIST_SoundfyPlayer
+__OBJC_CLASS_RO_$_SoundfyPlayer
+/Users/vinicius/Desktop/Soundfy/Soundfy/Soundfy/SoundfyPlayer.m
+Soundfy/SoundfyPlayer.m
