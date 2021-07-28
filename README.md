@@ -125,6 +125,10 @@ Then run `swift build` and wait for SPM to install SwiftySound.
 ### Manual installation
 Drop the `Soundfy.framework` file into your project, link against `AVFoundation.framework` and you are ready to go.
 
+### Test application
+If you want you can use our [Test Case App](https://github.com/AlbertQueiroz/SoundfyTester)
+
 ## Licenses
 
-Soundfy is licensed under the [MIT License](https://raw.githubusercontent.com/adamcichy/SwiftySound/master/LICENSE).
+Soundfy is licensed under the [MIT License](https://github.com/AlbertQueiroz/Soundfy/blob/main/LICENSE).
+
