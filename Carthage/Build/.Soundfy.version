@@ -8,7 +8,7 @@
   "tvOS" : [
 
   ],
-  "commitish" : "82de0bae4d005a6de03d80edd7a12d3227f2ee24",
+  "commitish" : "33f8fe6d7d00f03d7b88b4ddd33c601c48eb0c19",
   "iOS" : [
     {
       "hash" : "1827a4f86d969bdc947907e9aa29aa785db21fc2c24a80dedabb7e17f28e4fbe",
@@ -17,7 +17,7 @@
       "identifier" : "ios-arm64_x86_64-simulator"
     },
     {
-      "hash" : "3ad0503db9de0904ef2c95c74b80bea836134d8f9e12a02859332d987bba829a",
+      "hash" : "ca3f0a13ec93dfc0c675d522aceb0fde9904d6b0b7d8057cbd0a405add0871e0",
       "name" : "Soundfy",
       "container" : "Soundfy.xcframework",
       "identifier" : "ios-arm64"
